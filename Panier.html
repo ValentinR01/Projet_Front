@@ -79,6 +79,19 @@
                     E = document.getElementById('item' + String(value)).appendChild(document.createElement('h4'));
                     E.textContent = 'Quantité : ' + Quantite;
                     
+                    //Ajout des boutons +/-
+                    var Btn_moins = document.getElementById('item' + String(value)).appendChild(document.createElement('button'));
+                    Btn_moins.id = 'Btn_moins';
+                    Btn_moins.textContent = "-";
+                    Btn_moins.onclick = function() { alert('id:' + Panier.ID[value]); };
+                    
+                    var Btn_plus = document.getElementById('item' + String(value)).appendChild(document.createElement('button'));
+                    Btn_plus.id = 'Btn_moins';
+                    Btn_plus.textContent = "+";
+                    Btn_plus.onclick = function() {
+                        alert('id' + Panier.ID[value]); };
+                    
+                    
                     var Prix_Total = Prix_unitaire * Quantite;
                     F = document.getElementById('item' + String(value)).appendChild(document.createElement('h4'));
                     F.textContent = Prix_Total + '€';     
@@ -92,10 +105,14 @@
        
     
 }
-             
-    </script>
+   
+    </script>    
+     
+   
+    
 <div class='Total_bar'>
     <h2 id='Total_Commande'></h2>
+    <a href="checking.html"><button id="acheter">Acheter</button></a>
 </div>
 
 
