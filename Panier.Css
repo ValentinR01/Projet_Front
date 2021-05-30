@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+
+@media screen and (max-width: 850px) {
+    nav {
+        display: none;
+    }
+    
+    img#hamburger {
+        cursor: pointer;
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+    
+    #Francesca_header {
+        max-width: 85%;
+    }
+    
+}
+
+
+header {
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.09);
+    align-items: center;
+    
+}
+
+#hamburger {
+    display: none;
+}
+
+nav li {
+    padding-right: 60px;
+    display: inline;
+    font-family: Rufina;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #515151;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color : inherit;
+}
+
+#Panier_svg {
+    position: relative;
+}
+
+#Nb_articles {
+    position: absolute;
+    color: #515151;
+    font-family: Roboto;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+#container {
+    margin-top: 100px;
+}
+
+#container div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: right;
+    padding: 20px;
+    margin: 0 10%;
+    margin-bottom: 25px;
+    background-color: lightgrey;
+}
+
+#container div img {
+    max-height: 200px;
+}
