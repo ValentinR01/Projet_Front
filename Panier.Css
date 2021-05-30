@@ -55,6 +55,19 @@ a {
     margin-left: 4px;
 }
 
+#Btn_moins, #Btn_plus {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
 #container {
     margin-top: 100px;
     margin-bottom: 20vh;
@@ -63,14 +76,19 @@ a {
 #container div {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-content: right;
     padding: 20px;
     margin: 0 10%;
     margin-bottom: 25px;
     border: 3px solid lightgrey;
     border-radius: 5px;
+}
+
+#acheter {
+    display: inline;
+    padding: 10px 20px;
 }
 
 #container div img {
@@ -107,6 +125,9 @@ h4 {
 }
 
 .Total_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     color: white;
     background-color: black;
     padding: 0 10%;
