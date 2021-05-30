@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checking Page</title>
+    <link rel="stylesheet" type="text/css" href="checking.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+<body>
+    <header>
+        <img class='hamburger' id='hamburger' src='Burger.svg'>
+        <a href="index.html"><img src="Francesca.svg" alt="Francesca Galvani" id='Francesca_header'></a>
+
+        <nav id="Nav_header">
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="Panier.html"><img src="shopping.svg" alt="Panier" id="Panier_svg"><span id="Nb_articles"></span></a>
+    </header>
+
+    <main>
+         <h2>Informations de Livraison</h2>
+            <p>Veuillez rentrer vos informations de livraisons</p>
+
+            <form action="" method="post">
+                <div class="flex">
+                    <div>
+                        <label for="nom">Nom</label><br>
+                        <input type="text" id="nom" name="user_firstname" placeholder="Doe" required>
+                    </div>
+                    
+                    <div>
+                        <label for="prenom">Prénom</label><br>
+                        <input type="text" id="prenom" name="user_lastname" placeholder="John" required>
+                    </div>
+
+                    <div>
+                        <label for="mail">Adresse email</label><br>
+                        <input type="email" id="mail" name="user_mail" placeholder="john.doe@gmail.com" required>
+                    </div>
+                    
+                    <div>
+                        <label for="tel">Téléphone</label><br>
+                        <input type="tel" id="tel" name="user_tel" placeholder="+33" required>
+                    </div>
+                    
+                    <div>
+                        <label for="Adresse">Adresse</label><br>
+                        <input type="text" id="adresse" name="user_adresse" placeholder="10 rue du Progrès" required>
+                    </div>
+                    
+                    <div>
+                        <label for="CP">Code Postale</label><br>
+                        <input type="text" id="CP" name="user_CP" placeholder="93100" required>
+                    </div>
+                    
+                    <div>
+                        <label for="Ville">Ville</label><br>
+                        <input type="text" id="Ville" name="user_Ville" placeholder="Montreuil" required>
+                    </div>
+                    </div>
+                    <button type="submit" id="Envoyer">Envoyer</button>
+                
+        </form>
+        
+    </main>
+    <script>
+        document.getElementById('Envoyer').addEventListener('click', function() {
+            var acheteur = new Object();
+            acheteur.nom = document.getElementById('nom').value;
+            acheteur.prenom = document.getElementById('prenom').value;
+            acheteur.mail = document.getElementById('mail').value;
+            acheteur.tel = document.getElementById('tel').value;
+            acheteur.adresse = document.getElementById('adresse').value;
+            acheteur.CP = document.getElementById('CP').value;
+            acheteur.ville = document.getElementById('Ville').value;
+            JSON.stringify(acheteur)
+            
+            //Récupération du Panier
+             var PanierJSON = localStorage.getItem("Panier");
+             var Panier = JSON.parse(PanierJSON);
+            
+            //Concatenation des 2
+            var JsonCommande = acheteur.concat(Panier);
+            
+            function sendData(data) {
+            var XHR = new XMLHttpRequest();
+            var FD  = new FormData();
+
+           
+            for(name in data) {
+            FD.append(name, data[name]);
+  }
+
+ 
+            XHR.addEventListener('load', function(event) {
+                alert('Commande envoyé avec succès');
+  });
+
+
+  XHR.addEventListener('error', function(event) {
+    alert('Quelque chose s\'est mal passé.');
+  });
+
+ 
+  XHR.open('POST', '');
+
+  
+  XHR.send(FD);
+}
+            function sendData(JsonCommande);
+        })
+    </script>
+    <footer>
+        <div class="Footer_flex">
+            <div>
+                <a href="index.html" id="Francesca_footer">Francesca <br> Galvani <br></a>
+                <adress>10 Prom. des Anglais <br>06200 Nice<br>France</adress>
+            </div>
+
+            <div>
+                <h5>Informations</h5>
+                <ul>
+                    <a href="">
+                        <li>Retour</li>
+                    </a>
+                    <a href="">
+                        <li>Mentions légales</li>
+                    </a>
+                    <a href="">
+                        <li>Conditions Générales de Vente</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div>
+                <h5>Navigation</h5>
+                <ul>
+                    <a href="">
+                        <li>Blog</li>
+                    </a>
+                    <a href="">
+                        <li>Contact</li>
+                    </a>
+                    <a href="">
+                        <li>Boutique</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="social_networks">
+                <a href="https://www.instragram.com" target="_blank"><img id='instagram' src="Instagram.svg" alt="Instagram"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="Facebook.svg" alt="Facebook"></a>
+                <a href="https://www.pinterest.com" target="_blank"><img src="Pinterest.svg" alt="Pinterest"></a>
+
+            </div>
+        </div>
+
+        <span>© 2021 Francesca Galvani - All rights reserverd</span>
+    </footer>
+
+    <script src=Panier.js></script>
+    <script src="Burger_menu.js"></script>
+    </body>
