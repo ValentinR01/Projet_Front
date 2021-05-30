@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boutique</title>
+    <link rel="stylesheet" type="text/css" href="boutique.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <img class='hamburger' id='hamburger' src='Burger.svg'>
+        <a href="index.html"><img src="Francesca.svg" alt="Francesca Galvani" id='Francesca_header'></a>
+
+        <nav id="Nav_header">
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="Panier.html"><img src="shopping.svg" alt="Panier" id="Panier_svg"><span id="Nb_articles"></span></a>
+    </header>
+
+    <div id='container_genre'>
+        <a id='Homme' href='boutique.html?Homme'>Homme</a>
+        <a id='Femme' href='boutique.html?Femme'>Femme</a>
+    </div>
+
+    <div id="Flex_articles"></div>
+    
+    
+<script src="Panier.js"></script>
+<script src="Burger_menu.js"></script>
+<script >
+
+// Fonction de lecture des données du JSON
+function readJson () {
+   fetch('data.json')
+    .then((response) => {
+    return response.json()
+  })
+    
+  .then((data) => {
+    console.log(data);
+    // Récupération de l'ID depuis l'URL
+    if (window.location.search === '?Homme') {
+        //Changement de style - Bouton Homme séléctionné 
+        var Homme = document.getElementById('Homme');
+        Homme.style.backgroundColor = 'black';
+        Homme.style.color = 'white';
+        Homme.style.fontWeight = 'bold';
+        
+         for (var i = 10; i<=20; i++) {
+        // Création d'une balise <a> dédié à un produit
+        var A = Ajout_Element("a","", document.getElementById("grid"), i);
+        document.querySelector('.a' + i).href =  'produit.html?' + "id=" + i;
+        
+        //Insertion de l'image correspondate
+        var IMG = document.createElement('img');
+        IMG.src = data.Produits[i].img_link;
+        document.querySelector('.a' + String(i)).appendChild(IMG);
+        
+        // Insertion du titre et du prix de l'article
+        Ajout_Element("h2", data.Produits[i].nom, document.querySelector(".a" + String(i)), i);
+        Ajout_Element("h3", (data.Produits[i].prix + "€"), document.querySelector(".a" + String(i)), i);
+    }
+        }
+       
+    else {
+        var Femme = document.getElementById('Femme');
+        
+        //Changement de style - Bouton Femme séléctionné 
+        Femme.style.backgroundColor = 'black';
+        Femme.style.color = 'white';
+        Femme.style.fontWeight = 'bold';
+        
+        for (var i = 0; i<10; i++) {
+        // Création d'une balise <a> dédié à un produit
+        Ajout_Element("a","", document.getElementById("Flex_articles"), i);
+        document.querySelector('.a' + i).href =  'produit.html?' + "id=" + i;
+        
+        //Insertion de l'image correspondate
+        var IMG = document.createElement('img');
+        IMG.src = data.Produits[i].img_link;
+        document.querySelector('.a' + String(i)).appendChild(IMG);
+        
+        // Insertion du titre et du prix de l'article
+        Ajout_Element("h2", data.Produits[i].nom, document.querySelector(".a" + String(i)), i);
+        Ajout_Element("h3", (data.Produits[i].prix + "€"), document.querySelector(".a" + String(i)), i);
+}
+ 
+  }
+
+    })
+    };
+    
+readJson ();
+    
+    function Ajout_Element (elemNode, textContent, parent, i) {
+        let A = parent.appendChild(document.createElement(elemNode));
+        if (elemNode == "a") {
+            A.className = elemNode + String(i)
+        }
+        A.textContent = textContent;        
+};
+</script>
+  
+  
+   <footer>
+       <div class="Footer_flex">
+           <div>
+               <a href="index.html" id="Francesca_footer">Francesca <br> Galvani <br></a>
+               <adress>10 Prom. des Anglais <br>06200 Nice<br>France</adress>
+           </div>
+
+           <div>
+               <h5>Informations</h5>
+               <ul>
+                   <a href="">
+                       <li>Retour</li>
+                   </a>
+                   <a href="">
+                       <li>Mentions légales</li>
+                   </a>
+                   <a href="">
+                       <li>Conditions Générales de Vente</li>
+                   </a>
+               </ul>
+           </div>
+
+           <div>
+               <h5>Navigation</h5>
+               <ul>
+                   <a href="">
+                       <li>Blog</li>
+                   </a>
+                   <a href="">
+                       <li>Contact</li>
+                   </a>
+                   <a href="">
+                       <li>Boutique</li>
+                   </a>
+               </ul>
+           </div>
+
+           <div class="social_networks">
+               <a href="https://www.instragram.com" target="_blank"><img id="instagram" src="Instagram.svg" alt="Instagram"></a>
+               <a href="https://www.facebook.com" target="_blank"><img src="Facebook.svg" alt="Facebook"></a>
+               <a href="https://www.pinterest.com" target="_blank"><img src="Pinterest.svg" alt="Pinterest"></a>
+
+           </div>
+       </div>
+
+       <span>© 2021 Francesca Galvani - All rights reserverd</span>
+   </footer>
+
+
+   </body>

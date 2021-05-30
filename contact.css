@@ -1,0 +1,367 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.09);
+    align-items: center;
+}
+
+#hamburger {
+    display: none;
+}
+
+
+h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+nav li {
+    padding-right: 60px;
+    display: inline;
+    font-family: Rufina;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #515151;
+}
+
+#Panier_svg {
+    position: relative;
+}
+
+#Nb_articles {
+    position: absolute;
+    color: #515151;
+    font-family: Roboto;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color : inherit;
+}
+
+p {
+    font-family: Rufina;
+    width: 60%;
+    font-size: 25px;
+    letter-spacing: 0.03em;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 13px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    margin-top: 100px;
+    color: white;
+    background-color: black;
+    padding-top: 65px;
+}
+
+.contact {
+    margin-top: 150px;
+    padding-top: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(background_2.jpg);
+    border: 15px solid #01071f;
+    border-radius: 5px;
+}
+
+.Footer_flex {
+    width: 80%;
+    padding-right: 10%;
+    padding-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Footer_flex div {
+    margin-bottom: 50px;
+}
+
+#Francesca_footer {
+    margin-top: -9px;
+    display: block;
+    margin-bottom: 15px;
+    font-family: Rufina;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.02em;
+}
+
+adress {
+    font-family: Rufina;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #C0C0C0;
+}
+
+.social_networks {
+    text-align: right;
+}
+
+.social_networks img {
+    margin-left: 32px;
+}
+
+.social_networks img:hover {
+    transform: scale(1.2)
+}
+
+footer ul li {
+    margin-bottom: 7px;
+    font-family: Rufina;
+    font-size: 18px;
+    line-height: 30px;
+    color: #C0C0C0;
+}
+
+footer ul li:hover {
+    color: white;
+    font-weight: bold;
+}
+
+form {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h5 {
+    margin-bottom: 15px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+footer span {
+    margin-top: 50px;
+    padding-bottom: 30px;
+    display: block;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    color: #AEAEAE;
+}
+
+label {
+    color: white;
+    font-family: Rufina;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 0.03em;
+}
+
+
+input {
+    padding: 0 15px;
+    height: 45px;
+    font-family: Rufina;
+    font-size: 17px;
+    letter-spacing: 0.02em;
+    border-radius: 5px;
+    border: none;
+    border: solid 4px black;
+}
+
+textarea {
+    padding: 15px 15px;
+    height: 45px;
+    font-family: Rufina;
+    font-size: 17px;
+    letter-spacing: 0.02em;
+    border-radius: 5px;
+    border: none;
+    border: solid 5px black;
+}
+
+
+form {
+    width: 60%;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 1fr 2fr;
+}
+
+input#name {
+    width: 200px;
+}
+
+input#mail {
+    width: 93.4%;
+}
+
+input {
+    margin-top: 10px;
+}
+
+.msg {
+    margin-top: 25px;
+}
+
+textarea#msg {
+    margin-top: 10px;
+    height: 120px;
+    width: 96%;
+}
+
+button {
+    margin: 20px auto 40px auto;
+    display: block;
+    padding: 0 40px 0 15px;
+    height: 45px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    font-family: Roboto;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    background-image: url(Group%207.svg);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-row: 1fr 1fr;
+    }
+    
+    p {
+        width: 80%;
+    }
+    
+    input#mail {
+        width: 84%;
+}
+    
+    textarea#msg {
+        width: 84%;
+}    
+    
+    .contact {
+        background-image: none;
+        background-color: #9a9696;
+        }
+}
+    
+    @media screen and (max-width: 850px) {
+#Nav_header {
+        display: none;
+        width: 100%
+    }
+    
+    #Nav_header.show {
+        margin-top: 300px;
+        display: flex;
+        background-color: grey;
+        z-index: 0;
+    }
+    
+    #Francesca_header.hide {
+        display: none;
+    }
+    
+    #hamburger {
+        cursor: pointer;
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+    
+    #Francesca_header {
+        max-width: 85%;
+    }
+    
+    #Nav_header ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: lightgray;
+        top: 90px;
+        left: 0;
+        text-align: center;
+    }
+    
+    #Nav_header li {
+        display: block;
+        padding-right: 0;
+        margin: 50px 0;
+    }
+        
+    .social_networks {
+        margin-right: auto;
+        margin-left: auto;
+}
+        
+    img#instagram {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+      .Footer_flex {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    p {
+        width: 90%;
+        font-size: 22px;
+    }
+    
+    form {
+    width: 80%;
+}
+    
+    textarea#msg {
+    height: 170px;
+}
+
+

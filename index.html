@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Francesca Galvani</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <img class='hamburger' id='hamburger' src='Burger.svg'>
+        <a href="index.html"><img src="Francesca.svg" alt="Francesca Galvani" id='Francesca_header'></a>
+
+        <nav id="Nav_header">
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="Panier.html"><img src="shopping.svg" alt="Panier" id="Panier_svg"><span id="Nb_articles"></span></a>
+    </header>
+    
+    
+    <main>
+        <div class="home">
+
+
+            <div class="line"></div>
+            <p>Après 5 ans chez Giorgio Armani en tant que styliste, j'ai décidé de me lancer dans la création de ma propre marque. A travers mes vêtements, j'exprime ma créativité par un esprit chic et élégant. </p>
+            </div>
+        
+
+        <div class="creation">
+            <h2>Mes créations</h2>
+
+            <div class="grid">
+                <figure>
+                    <a href="boutique.html?Femme">
+                        <div class="img-hover-zoom">
+                            <img src="women_model.jpg" alt="Mannequin Femme">
+                            <figcaption>Pour elle</figcaption>
+                        </div>
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="boutique.html?Homme">
+                        <div class="img-hover-zoom">
+                            <img src="men_model.jpg" alt="Mannequin Homme">
+                            <figcaption>Pour lui</figcaption>
+                        </div>
+                    </a>
+                </figure>
+            </div>
+
+        </div>
+
+
+
+        <p id="demande">Pour toute demande personnalisé, contactez moi et je vous répondrai dans les plus brefs délais.</p>
+
+        <a href="contact.html"><span>Contact</span></a>
+
+        <div class="newsletter">
+            <h2>Newsletter</h2>
+            <p>Soyez au courant de mes dernières créations et promotions en exclusivité.</p>
+
+            <form action="#" name="contact_form">
+                <input class="email" name="email" type="email" required placeholder="you@domain.com">
+                <input class="submit" type="submit" value="Inscription">
+            </form>
+
+        </div>
+
+        <h2>Mes derniers articles</h2>
+
+        <div class="flex_1">
+
+            <a href="blog.html">
+                <div id="card_1">
+                    <img src="Milan.jpg" alt="Milan">
+                    <h4>Mes dernières vacances à Milan</h4>
+                </div>
+            </a>
+
+            <a href="blog.html">
+                <div id="card_2">
+                    <img src="Montre.jpg" alt="Montre">
+                    <h4>Ma sélection - Montres suisses</h4>
+                </div>
+            </a>
+
+            <a href="blog.html">
+                <div id="card_3">
+                    <img src="Sport.jpg" alt="Sport">
+                    <h4>Sport : 5 conseils pour s'y remettre !</h4>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="inline">
+            <a href="blog.html" class="blog"><span>Découvrir tous mes articles</span></a>
+            <div class="long-arrow-right"></div>
+        </div>
+
+    </main>
+    
+    
+    <footer>
+        <div class="Footer_flex">
+            <div>
+                <a href="index.html" id="Francesca_footer">Francesca <br> Galvani <br></a>
+                <adress>10 Prom. des Anglais <br>06200 Nice<br>France</adress>
+            </div>
+
+            <div>
+                <h5>Informations</h5>
+                <ul>
+                    <a href="">
+                        <li>Retour</li>
+                    </a>
+                    <a href="">
+                        <li>Mentions légales</li>
+                    </a>
+                    <a href="">
+                        <li>Conditions Générales de Vente</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div>
+                <h5>Navigation</h5>
+                <ul>
+                    <a href="">
+                        <li>Blog</li>
+                    </a>
+                    <a href="">
+                        <li>Contact</li>
+                    </a>
+                    <a href="">
+                        <li>Boutique</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="social_networks">
+                <a href="https://www.instragram.com" target="_blank"><img id='instagram' src="Instagram.svg" alt="Instagram"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="Facebook.svg" alt="Facebook"></a>
+                <a href="https://www.pinterest.com" target="_blank"><img src="Pinterest.svg" alt="Pinterest"></a>
+            </div>
+            
+        </div>
+
+        <span>© 2021 Francesca Galvani - All rights reserverd</span>
+    </footer>
+
+</body>
+   <script src="Panier.js"></script>
+   <script src="Burger_menu.js"></script>
+
+</html>

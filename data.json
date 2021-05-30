@@ -1,0 +1,183 @@
+{
+    "Produits":[
+    {
+        "id" : 1,
+        "nom":"Pantalon Bleu",
+        "prix":"125",
+        "informations": ["100% Cotton", "Coupe skinny", "Lavage 30°"],
+        "taille disponible": ["XS","S","M","L"],
+        "img_link":"https://www.orchestra.ch/uploads/styles/thehub_high/catalogues_price_image/HM91RX_BLM_1_X_1.jpg"
+    },
+    {
+        "id" : 2,
+        "nom":"Pantalon noir",
+        "prix":"125",
+        "informations": ["100% Cotton", "Coupe droite", "Lavage 30°"],
+        "taille disponible": ["XS","S","M","L"],
+        "img_link":"https://www.kamille.fr/wp-content/uploads/2015/08/Pantalon-coupe-droite-femme-ma-tenue-habill%C3%A9e..jpg"
+    },
+
+    {
+        "id" : 3,
+        "nom":"Pantalon beige",
+        "prix":"125",
+        "informations": ["100% Cotton", "Coupe droite", "Lavage 30°"],
+        "taille disponible": ["S","M","L"],
+        "img_link":"https://www.monkeymagoos.com/wp-content/uploads/2020/11/pantalons-pantalon-droit-classique-beige-givenchy-femme.jpg"
+    },
+
+    {
+        "id" : 4,
+        "nom":"Robe bleu",
+        "prix":"200",
+        "informations": ["robe en coton", "lavage à 30°"],
+        "taille disponible": ["S","M","L", "XL"],
+        "img_link":"https://image01.bonprix.fr/assets/460x644/1554152086/15202807-dR49NuZa.jpg"
+    },
+
+    {
+        "id" : 5,
+        "nom":"Salopette noir",
+        "prix":"180",
+        "informations": ["70% Soie, 30% Viscose", "Lavage Pressing"],
+        "taille disponible":["S","M","L"],
+        "img_link":"https://resize-elle.ladmedia.fr/rcrop/638,,forcex/img/var/plain_site/storage/images/mode/robe/robe-salopette/robe-salopette-noire-new-look/60351981-1-fre-FR/Robe-salopette-noire-New-Look.jpg"
+    },
+
+    {
+        "id" : 6,
+        "nom":"Veste noir",
+        "prix":"140",
+        "informations": ["100% cuir", "Lavage à sec"],
+        "taille disponible":["XS", "S","M","XL"],
+        "img_link":"https://litb-cgis.rightinthebox.com/images/640x853/202009/ngzm1600246787361.jpg"
+    },
+
+    {
+        "id" : 7,
+        "nom":"T-shirt noir",
+        "prix":"79",
+        "informations": ["100% coton", "Lavage à 30°"],
+        "taille disponible":["S","M","L"],
+        "img_link":"https://www.soulery.com/15029-thickbox_default/tshirt-homme-zegna-toulouse.jpg"
+    },
+
+    {
+        "id" : 8,
+        "nom":"Chemisier blanc",
+        "prix":"119",
+        "informations": ["100% coton", "Lavage à 30°"],
+        "taille disponible":["XS","XL"],
+        "img_link":"https://th.bing.com/th/id/Rfa2ff2385d74b343d9bd75fa62d2116d?rik=UHvSmH9jCHgBjA&pid=ImgRaw"
+    },
+
+    {
+        "id" : 9,
+        "nom":"T-shirt blanc",
+        "prix":"79",
+        "informations": ["100% coton", "Coupe Droite", "Lavage à 30°"],
+        "taille disponible":["S","M","L"],
+        "img_link":"https://www.lemahieu.com/1565/tee-shirt-manches-courtes-col-rond-en-coton.jpg"
+    },
+
+    {
+        "id" : 10,
+        "nom":"Chemisier à rayure",
+        "prix":"119",
+        "informations":["100% coton", "Coupe droite", "Lavage 30°"],
+        "taille disponible":["XS", "S","M","XL"],
+        "img_link":"https://th.bing.com/th/id/R8392031b411221da28dbdee221f85f0b?rik=lFq%2buU5TXr2Sgg&riu=http%3a%2f%2fcdn1-elle.ladmedia.fr%2fvar%2fplain_site%2fstorage%2fimages%2fmode%2ftops-femme%2fchemises-femmes%2fchemise-femme-a-rayures%2f72543097-1-fre-FR%2fChemise-femme-a-rayures.jpg&ehk=wSLzj9q%2fpgjEKtotvNFtZL%2frs9spDbGq%2fVKuwQWC46c%3d&risl=&pid=ImgRaw"
+    },
+
+    {
+        "id" : 11,
+        "nom":"Chemise noir",
+        "prix":"129",
+        "informations": ["100% coton", "Coupe droite", "Lavage 30°"],
+        "taille disponible": ["XS", "S","M","XL"],
+        "img_link":"https://www.ccvmode.com/148737-product_zoom_default/chemise-homme-noir.jpg"
+    },
+
+    {
+        "id" : 12,
+        "nom":"Casquette",
+        "prix":"29",
+        "informations": ["100% coton", "Taille unique"],
+        "taille disponible": ["Taille unique"],
+        "img_link":"https://cdn.laredoute.com/products/641by641/8/e/7/8e7adb8d34ac4140c4fd43d98795cccc.jpg"
+    },
+
+    {
+        "id" : 13,
+        "nom":"pantalon noir",
+        "prix":"189",
+        "informations": ["90% coton, 10% Elastane", "Coupe droite", "Lavage 30°"],
+        "taille disponible": ["M","XL"],
+        "img_link":"https://contents.mediadecathlon.com/p1299122/2000x2000/sq/pantalon_bateau_race_homme_noir_tribordvoile_8503167_1299122.jpg?k=5200c83f2f030ab90f855d14985184bd"
+    },
+
+    {
+        "id" : 14,
+        "nom":"pantalon bleu",
+        "prix":"189",
+        "informations": ["90% coton, 10% Elastane", "Coupe droite", "Lavage 30°"],
+        "taille disponible": ["XS", "S","M","XL"],
+        "img_link":"https://th.bing.com/th/id/R5b70fe44598dda30b26b46bd86c2eefa?rik=ew2kdUpl5IPxiw&pid=ImgRaw"
+    },
+
+    {
+        "id" : 15,
+        "nom":"Blazer Marine",
+        "prix":"229",
+        "informations": ["100% Laine", "Lavage Pressing"],
+        "taille disponible": ["XS","M","XL"],
+        "img_link":"https://www.cristophe.fr/wp-content/uploads/2016/11/Un-blazer-homme-bleu-marine-10.jpg"
+    },
+
+    {
+        "id" : 16,
+        "nom":"Pullover gris",
+        "prix":"179",
+        "informations":["100% coton", "Coupe large", "Lavage 30°"],
+        "taille disponible": ["S","M","XL"],
+        "img_link":"https://th.bing.com/th/id/Re1cbefc395f1529dc08492b044e3ce57?rik=mMvCZ3qubLnT0w&pid=ImgRaw"
+    },
+
+    {
+        "id" : 17,
+        "nom":"T-shirt noir",
+        "prix":"79",
+        "informations": ["100% coton", "Coupe large", "Lavage 30°"],
+        "taille disponible": ["XS", "S","M"],
+        "img_link":"https://th.bing.com/th/id/R72158bddbbb90d742df02cca4d10c6c6?rik=dr%2bjjPLKK4mp%2bg&pid=ImgRaw"
+    },
+
+    {
+        "id" : 18,
+        "nom":"T-shirt rayure",
+        "prix":"79",
+        "informations":["100% coton", "Coupe fit", "Lavage 30°"],
+        "taille disponible":["XS", "S","M","XL"],
+        "img_link":"https://www.ruedeshommes.com/media/produits/img/86545-armor-lux-e20-tee-shirt-73842-eii-hoedlc-heritage-navire-blanc-tee-shirt-mariniere-armor-lux-hoedic-en-coton-bleu-marine-raye-blanc-3_1128x1128.jpg"
+    },
+
+    {
+        "id" : 19,
+        "nom":"Jogging Comfort",
+        "prix":"149",
+        "informations": ["100% viscose", "Coupe large", "Lavage 30°"],
+        "taille disponible":["M","XL"],
+        "img_link":"http://d3ugyf2ht6aenh.cloudfront.net/stores/116/793/products/224g6691-5c7eeace509f49daeb15735530734455-640-0.jpg"
+    },
+
+    {
+        "id" : 20,
+        "nom":"Cravatte Laine grise",
+        "prix":"99",
+        "informations": ["100% laine", "Lavage Pressing"],
+        "taille disponible":["Taille unique"],
+        "img_link":"https://media.office-artist.com/3596-large_default/cravate-laine-gris-.jpg"
+    }
+    
+]
+}
